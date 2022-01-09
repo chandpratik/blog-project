@@ -8,7 +8,7 @@ export const TopPosts = ({ data }) => {
       <div className='top-posts-title'>Top Posts</div>
       <div className='large-thumbnail'>
         <div className='large-thumbnail-img-container'>
-          <img src={data[32].img_url} alt='large-thumbnail-image' />
+          <img src={data[32].img_url} alt='large-thumbnail' />
         </div>
         <div className='large-thumbnail-content'>
           <div className='large-thumbnail-text-content'>

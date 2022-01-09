@@ -19,7 +19,7 @@ export const Slider = ({ sliderData }) => {
         <div className={idx === current ? 'slide active' : 'slide'}>
           {current === idx && (
             <>
-              <img src={data.img_url} alt='slide-image' className='slide-img' />
+              <img src={data.img_url} alt='slide' className='slide-img' />
               <p className='slider-title'>{data.title}</p>
               <p className='slider-subtitle'>
                 <b>{data.category}</b> / {data.date_published}

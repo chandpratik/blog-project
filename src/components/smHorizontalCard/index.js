@@ -7,7 +7,7 @@ export const SmHorizontalCard = ({ data, rank }) => {
     <div className='sm-horizontal-card'>
       <div className='sm-horizontal-card-details'>
         <div className='sm-horizontal-card-img-container'>
-          <img src={data.img_url} alt='top-post-img' />
+          <img src={data.img_url} alt='top-post' />
         </div>
         <div className='sm-horizontal-card-content'>
           <div className='sm-horizontal-card-title'>{data.title}</div>

@@ -28,8 +28,7 @@ export const Blog = () => {
           <div className='blog-author-card-left'>
             <img
               src='https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=80'
-              alt=''
-              srcset=''
+              alt='avatar'
             />
             <div>
               <div className='author-name'>{blogData.author_name}</div>
@@ -46,7 +45,7 @@ export const Blog = () => {
           </div>
         </div>
         <div>
-          <img className='blog-image' src={blogData.img_url} alt='blog-image' />
+          <img className='blog-image' src={blogData.img_url} alt='blog' />
         </div>
         <div className='blog-content'>{blogData.content}</div>
         <div className='blog-tags'>
@@ -63,7 +62,7 @@ export const Blog = () => {
             <div className='blog-author-card-left'>
               <img
                 src='https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=80'
-                alt='author-image'
+                alt='author'
               />
               <div className='written-by'>
                 <div className='written-by-title'>WRITTEN BY</div>

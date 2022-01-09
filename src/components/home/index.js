@@ -35,7 +35,7 @@ export const Home = () => {
             <HorizontalCard data={data[3]} />
           </div>
           <div className='latest-article-category-2'>
-            <img src={data[12].img_url} alt='latest-article-category-2-img' />
+            <img src={data[12].img_url} alt='latest-article-category-2' />
             <p className='latest-article-category-2-title'>{data[12].title}</p>
             <p className='latest-article-category-2-subtitle'>
               <b>{data[12].category}</b> / {data[12].date_published}

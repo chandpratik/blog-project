@@ -7,7 +7,7 @@ export const VerticalCard = ({ data }) => {
       <div className='vertical-card-image-container'>
         <img
           src={data.img_url}
-          alt='vertical-card-img'
+          alt='vertical-card'
           className='vertical-card-image'
         />
       </div>

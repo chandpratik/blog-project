@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header, Home } from './components';
 
-import { useBlogsContext } from './context/blogscontext';
 import { Blog, Category } from './pages';
 
 function App() {

@@ -15,7 +15,7 @@ export const HorizontalCard = ({ data }) => {
       <div className='horizontal-card-img-container'>
         <img
           src={data.img_url}
-          alt='horizontal-card-img'
+          alt='horizontal-card'
           className='horizontal-card-image'
         />
       </div>
