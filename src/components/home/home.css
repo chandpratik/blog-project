@@ -70,10 +70,20 @@
 .latest-articles-category-3 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .lower-section {
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.view-more,
+.show-less {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {

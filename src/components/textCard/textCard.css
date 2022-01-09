@@ -1,5 +1,7 @@
 .text-card {
   margin: 0 2%;
+  max-width: 300px;
+  cursor: pointer;
 }
 
 .text-card-title {
@@ -19,4 +21,10 @@
 .text-card-subtitle {
   text-align: left;
   margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 950px) {
+  .text-card {
+    max-width: 100%;
+  }
 }

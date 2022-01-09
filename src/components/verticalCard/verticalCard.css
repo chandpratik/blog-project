@@ -1,5 +1,6 @@
 .vertical-card {
   max-width: 380px;
+  cursor: pointer;
 }
 
 .vertical-card-image-container {

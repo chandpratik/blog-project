@@ -1,9 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './verticalCard.css';
 
 export const VerticalCard = ({ data }) => {
+  let navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/blog/${data.id}`, {
+      state: { blogData: data, category: data.category },
+    });
+  };
   return (
-    <div className='vertical-card'>
+    <div className='vertical-card' onClick={handleClick}>
       <div className='vertical-card-image-container'>
         <img
           src={data.img_url}

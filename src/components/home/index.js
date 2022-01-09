@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useBlogsContext } from '../../context/blogscontext';
 import { AdvertismentBanner } from '../advertismentBanner';
 import { Hero } from '../hero';
@@ -6,10 +6,13 @@ import { HorizontalCard } from '../horizontalCard';
 import { TextCard } from '../textCard';
 import { TopPosts } from '../topPosts';
 import { VerticalCard } from '../verticalCard';
+import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
 import './home.css';
 
 export const Home = () => {
   const { data, loading, error } = useBlogsContext();
+  const [viewMore, setViewMore] = useState(false);
+  const [loadMore, setLoadMore] = useState(false);
 
   if (loading) return <div>Loading</div>;
   if (error) return <div>Error</div>;
@@ -33,6 +36,24 @@ export const Home = () => {
             <HorizontalCard data={data[1]} />
             <HorizontalCard data={data[2]} />
             <HorizontalCard data={data[3]} />
+            {loadMore ? (
+              <>
+                <HorizontalCard data={data[4]} />
+                <HorizontalCard data={data[5]} />
+                <HorizontalCard data={data[6]} />
+              </>
+            ) : null}
+            <div onClick={() => setLoadMore(prevState => !prevState)}>
+              {loadMore ? (
+                <span className='show-less'>
+                  <AiOutlineArrowUp style={{ color: '#F39C9C' }} /> Show Less
+                </span>
+              ) : (
+                <span className='view-more'>
+                  <AiOutlineArrowDown style={{ color: '#F39C9C' }} /> Load More
+                </span>
+              )}
+            </div>
           </div>
           <div className='latest-article-category-2'>
             <img src={data[12].img_url} alt='latest-article-category-2' />
@@ -53,6 +74,24 @@ export const Home = () => {
           <TextCard data={data[20]} />
           <TextCard data={data[21]} />
           <TextCard data={data[22]} />
+          {viewMore ? (
+            <>
+              <TextCard data={data[20]} />
+              <TextCard data={data[21]} />
+              <TextCard data={data[22]} />
+            </>
+          ) : null}
+        </div>
+        <div onClick={() => setViewMore(prevState => !prevState)}>
+          {viewMore ? (
+            <span className='show-less'>
+              <AiOutlineArrowUp style={{ color: '#F39C9C' }} /> Show Less
+            </span>
+          ) : (
+            <span className='view-more'>
+              <AiOutlineArrowDown style={{ color: '#F39C9C' }} /> View More
+            </span>
+          )}
         </div>
       </div>
     </div>
