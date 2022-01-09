@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { AdvertismentBanner, TopPosts } from '../../components';
 import { HorizontalCard } from '../../components/horizontalCard';
@@ -9,6 +9,9 @@ import './category.css';
 export const Category = () => {
   let { category } = useParams();
   const { data, loading, error } = useBlogsContext();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   if (loading) return <div>Loading</div>;
   if (error) return <div>Error</div>;
   const filteredData = data.filter(item => item.category === category);

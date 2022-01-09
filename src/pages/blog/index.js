@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import {
   AiFillFacebook,
@@ -16,6 +16,9 @@ export const Blog = () => {
   const { state } = useLocation();
   const { blogData, category } = state;
   const { data, loading, error } = useBlogsContext();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
