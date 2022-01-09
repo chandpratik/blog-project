@@ -9,14 +9,18 @@ export const FooterCard = ({ data, category }) => {
   return (
     <div className='footer-card'>
       <div>
-        <img src={categoryData.img_url} className='footer-card-img' />
+        <img
+          src={categoryData.img_url}
+          className='footer-card-img'
+          alt='realted-article'
+        />
       </div>
       <div>
         <div className='footer-card-title'>{categoryData.title}</div>
         <div className='footer-author-card-left'>
           <img
             src='https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=60'
-            alt='author-image'
+            alt='author'
           />
           <div className='footer-written-by'>
             <div className='footer-written-by-title'>WRITTEN BY</div>
