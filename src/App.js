@@ -1,16 +1,23 @@
 import React from 'react';
 import './App.css';
-import { Home } from './components';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Header, Home } from './components';
 
 import { useBlogsContext } from './context/blogscontext';
+import { Blog, Category } from './pages';
 
 function App() {
-  const { data, loading, error } = useBlogsContext();
-  if (loading) return <div>Loading</div>;
-  if (error) return <div>Error</div>;
   return (
     <div className='App'>
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Header />}>
+            <Route index element={<Home />} />
+            <Route path='blogs/:category' element={<Category />} />
+          </Route>
+          <Route path='/blog/:id' element={<Blog />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

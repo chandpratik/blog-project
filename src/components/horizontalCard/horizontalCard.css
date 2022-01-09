@@ -1,0 +1,41 @@
+.horizontal-card {
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+  margin: 4% 0;
+  cursor: pointer;
+}
+
+.horizontal-card-img-container {
+  width: 350px;
+  height: 180px;
+}
+
+.horizontal-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horizontal-card-right {
+  max-width: 400px;
+  margin: 0 5%;
+}
+
+.horizontal-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.horizontal-card-content {
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: left;
+  color: grey;
+}
+
+.horizontal-card-subtitle {
+  font-size: 10px;
+  text-align: left;
+}

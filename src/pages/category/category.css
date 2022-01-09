@@ -1,0 +1,15 @@
+.category {
+  margin: 50px 80px;
+}
+
+.latest-article-category-title {
+  margin: 2% 0;
+  font-size: 26px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .category {
+    margin: 50px 40px;
+  }
+}

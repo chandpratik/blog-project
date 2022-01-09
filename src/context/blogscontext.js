@@ -5,9 +5,8 @@ const BlogsContext = createContext();
 export function BlogsContextProvider({ children }) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const getData = () => {
-    setLoading(true);
     fetch('data.json', {
       headers: {
         'Content-Type': 'application/json',

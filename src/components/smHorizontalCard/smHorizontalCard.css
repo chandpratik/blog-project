@@ -1,0 +1,47 @@
+.sm-horizontal-card {
+  display: flex;
+  margin: 4% 0;
+}
+
+.sm-horizontal-card-details {
+  display: flex;
+  flex: 2;
+}
+
+.rank {
+  flex: 0.8;
+  font-size: 3rem;
+  font-weight: 700;
+  color: grey;
+}
+
+.sm-horizontal-card-img-container {
+  max-width: 180px;
+  flex: 1.4;
+}
+
+.sm-horizontal-card-img-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm-horizontal-card-content {
+  margin-left: 2%;
+  flex: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sm-horizontal-card-title {
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 1%;
+}
+
+.sm-horizontal-card-subtitle {
+  font-size: 12px;
+}

@@ -1,0 +1,13 @@
+.advertisment-container {
+  border: 1px solid black;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .advertisment-container {
+    display: none;
+  }
+}

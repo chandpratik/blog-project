@@ -1,0 +1,22 @@
+.text-card {
+  margin: 0 2%;
+}
+
+.text-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.text-card-content {
+  font-size: 0.9rem;
+  margin-bottom: 5%;
+  color: grey;
+  text-align: left;
+}
+
+.text-card-subtitle {
+  text-align: left;
+  margin-bottom: 5%;
+}
