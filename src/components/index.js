@@ -7,3 +7,4 @@ export * from './smHorizontalCard';
 export * from './topPosts';
 export * from './textCard';
 export * from './slider';
+export * from './spinner';

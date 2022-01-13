@@ -8,13 +8,14 @@ import { TopPosts } from '../topPosts';
 import { VerticalCard } from '../verticalCard';
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
 import './home.css';
+import { Spinner } from '../spinner';
 
 export const Home = () => {
   const { data, loading, error } = useBlogsContext();
   const [viewMore, setViewMore] = useState(false);
   const [loadMore, setLoadMore] = useState(false);
 
-  if (loading) return <div>Loading</div>;
+  if (loading) return <Spinner />;
   if (error) return <div>Error</div>;
   return (
     <div className='home-container'>
