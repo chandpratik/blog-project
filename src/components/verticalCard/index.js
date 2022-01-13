@@ -20,7 +20,9 @@ export const VerticalCard = ({ data }) => {
         />
       </div>
       <div className='vertical-card-title'>{data.title}</div>
-      <div className='vertical-card-content'>{data.content.slice(0, 130)}</div>
+      <div className='vertical-card-content'>
+        {data.content.substring(0, 200) + '...'}
+      </div>
       <div className='vertical-card-subtitle'>
         <b>{data.category}</b> / {data.date_published}
       </div>

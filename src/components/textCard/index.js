@@ -13,7 +13,9 @@ export const TextCard = ({ data }) => {
   return (
     <div className='text-card' onClick={handleClick}>
       <div className='text-card-title'>{data.title}</div>
-      <div className='text-card-content'>{data.content.slice(0, 270)}</div>
+      <div className='text-card-content'>
+        {data.content.substring(0, 300) + '...'}
+      </div>
       <div className='text-card-subtitle'>
         <b>{data.category}</b> / {data.date_published}
       </div>

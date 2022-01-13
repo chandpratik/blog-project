@@ -22,7 +22,7 @@ export const HorizontalCard = ({ data }) => {
       <div className='horizontal-card-right'>
         <div className='horizontal-card-title'>{data.title}</div>
         <div className='horizontal-card-content'>
-          {data.content.slice(0, 130)}
+          {data.content.substring(0, 200) + '...'}
         </div>
         <div className='horizontal-card-subtitle'>
           <b>{data.category}</b> / {data.date_published}
